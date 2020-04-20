@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="小田 ">
+<meta name="description" content="redis数据库安装与使用: 前往github下载要使用的版本的压缩包解压缩文件cd到安装目录运行redis-server将安装目录添加到系统环境变量中运行redis-server再次打开一个cmd窗口,输入redis-cli即可进入redis环境keys * 查看当前所有数据端口: 127.0.0.1:6379redis数据类型: list
+llen获取列表长度 lpush
+在表头添加数据 rpush
+在表尾添加数据 lpop
+从表头弹出数据 rpop
+从表尾弹出数据 rpoplpush
+从表尾弹出数据并添加到表头 lrange listName num num
+从xx到xx的所有数据,支持负数 lindex listName num
+指定下标获取对应的值 linsert key (before) value newvalue
+在某个值之前添加另一个新的数值 linsert key (after) value newvalue
+在某个值之后添加另一个新的值 lrem key n value
+删除某个值,n为次数当n &amp;gt; 0,则删除n个对应的值,且删除顺序从左往右当n &amp;lt; 0,删除n个对应的值,且删除顺序从右往左当n = 0,则删除所有符合条件的数据 string" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://tianwenyan.github.io/hugo-page/posts/2019/05/redis%E6%A6%82%E8%A7%88/" />
+
+
+    <title>
+        
+            redis概览 :: 😀欢迎来到小田的博客  — Hello Friend NG Theme
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://tianwenyan.github.io/hugo-page/main.min.7bfbbe12786fa0ded4b4c0d792cbb36a5bd0bdb0b856dde57aa7b1f6fe0f2b87.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://tianwenyan.github.io/hugo-page/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://tianwenyan.github.io/hugo-page/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://tianwenyan.github.io/hugo-page/favicon-16x16.png">
+    <link rel="manifest" href="https://tianwenyan.github.io/hugo-page/site.webmanifest">
+    <link rel="mask-icon" href="https://tianwenyan.github.io/hugo-page/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://tianwenyan.github.io/hugo-page/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="redis概览">
+<meta itemprop="description" content="redis数据库安装与使用: 前往github下载要使用的版本的压缩包解压缩文件cd到安装目录运行redis-server将安装目录添加到系统环境变量中运行redis-server再次打开一个cmd窗口,输入redis-cli即可进入redis环境keys * 查看当前所有数据端口: 127.0.0.1:6379redis数据类型: list
+llen获取列表长度 lpush
+在表头添加数据 rpush
+在表尾添加数据 lpop
+从表头弹出数据 rpop
+从表尾弹出数据 rpoplpush
+从表尾弹出数据并添加到表头 lrange listName num num
+从xx到xx的所有数据,支持负数 lindex listName num
+指定下标获取对应的值 linsert key (before) value newvalue
+在某个值之前添加另一个新的数值 linsert key (after) value newvalue
+在某个值之后添加另一个新的值 lrem key n value
+删除某个值,n为次数当n &gt; 0,则删除n个对应的值,且删除顺序从左往右当n &lt; 0,删除n个对应的值,且删除顺序从右往左当n = 0,则删除所有符合条件的数据 string">
+<meta itemprop="datePublished" content="2019-05-24T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-05-24T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="111">
+<meta itemprop="image" content="https://tianwenyan.github.io/hugo-page/"/>
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://tianwenyan.github.io/hugo-page/"/>
+
+<meta name="twitter:title" content="redis概览"/>
+<meta name="twitter:description" content="redis数据库安装与使用: 前往github下载要使用的版本的压缩包解压缩文件cd到安装目录运行redis-server将安装目录添加到系统环境变量中运行redis-server再次打开一个cmd窗口,输入redis-cli即可进入redis环境keys * 查看当前所有数据端口: 127.0.0.1:6379redis数据类型: list
+llen获取列表长度 lpush
+在表头添加数据 rpush
+在表尾添加数据 lpop
+从表头弹出数据 rpop
+从表尾弹出数据 rpoplpush
+从表尾弹出数据并添加到表头 lrange listName num num
+从xx到xx的所有数据,支持负数 lindex listName num
+指定下标获取对应的值 linsert key (before) value newvalue
+在某个值之前添加另一个新的数值 linsert key (after) value newvalue
+在某个值之后添加另一个新的值 lrem key n value
+删除某个值,n为次数当n &gt; 0,则删除n个对应的值,且删除顺序从左往右当n &lt; 0,删除n个对应的值,且删除顺序从右往左当n = 0,则删除所有符合条件的数据 string"/>
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2019-05-24 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://tianwenyan.github.io/hugo-page/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://tianwenyan.github.io/hugo-page/about/">About</a></li><li><a href="https://tianwenyan.github.io/hugo-page/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>One minute
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="https://tianwenyan.github.io/hugo-page/posts/2019/05/redis%E6%A6%82%E8%A7%88/">redis概览</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <h2 id="redis数据库安装与使用">redis数据库安装与使用:</h2>
+<pre><code>前往github下载要使用的版本的压缩包
+
+解压缩文件
+
+cd到安装目录
+
+运行redis-server
+
+将安装目录添加到系统环境变量中
+
+运行redis-server
+
+再次打开一个cmd窗口,输入redis-cli即可进入redis环境
+
+keys * 查看当前所有数据
+
+端口: 127.0.0.1:6379
+</code></pre><h2 id="redis数据类型">redis数据类型:</h2>
+<p>list</p>
+<pre><code>llen
+
+获取列表长度
+</code></pre>
+<p>lpush</p>
+<pre><code>在表头添加数据
+</code></pre>
+<p>rpush</p>
+<pre><code>在表尾添加数据
+</code></pre>
+<p>lpop</p>
+<pre><code>从表头弹出数据
+</code></pre>
+<p>rpop</p>
+<pre><code>从表尾弹出数据
+</code></pre>
+<p>rpoplpush</p>
+<pre><code>从表尾弹出数据并添加到表头
+</code></pre>
+<p>lrange listName num num</p>
+<pre><code>从xx到xx的所有数据,支持负数
+</code></pre>
+<p>lindex listName num</p>
+<pre><code>指定下标获取对应的值
+</code></pre>
+<p>linsert key (before) value newvalue</p>
+<pre><code>在某个值之前添加另一个新的数值
+</code></pre>
+<p>linsert key (after) value newvalue</p>
+<pre><code>在某个值之后添加另一个新的值
+</code></pre>
+<p>lrem key n value</p>
+<pre><code>删除某个值,n为次数
+
+当n &gt; 0,则删除n个对应的值,且删除顺序从左往右
+
+当n &lt; 0,删除n个对应的值,且删除顺序从右往左
+
+当n = 0,则删除所有符合条件的数据
+</code></pre>
+<p>string</p>
+<pre><code>二进制安全的键值对,以key:value的形式存在,也就是说,可以存储二进制文件
+
+string单个大小最大为512M
+</code></pre>
+<p>set</p>
+<pre><code>set设定键值对
+
+get根据键获取对应的值
+
+append 在键对应的值后面追加新的数据,同时具备set的概念,如果追加的目标是一个不存在的键,将会自动创建出来
+
+strlen 获取键对应的字符串的长度
+
+setnx 对一个键进行赋值,如果该键存在,则不会有任何效果,如果该键并不存在,则进行创建并赋值
+
+incr 对键对应的值进行+1操作,前提是这个值是纯粹的数字
+
+decr 对键对应的值进行-1操作,前提是这个值不是纯数字
+
+incrby keysName num 对键所对应的值进行加法操作,
+
+decrby keysName num 对键所对应的值进行减法操作
+</code></pre>
+<p>hash</p>
+<p>zset</p>
+<h2 id="redis基础操作">redis基础操作:</h2>
+<p>keys *</p>
+<pre><code>查看所有的数据
+</code></pre>
+<p>exists name</p>
+<pre><code>查看符合该名称的数据总量
+</code></pre>
+<p>del name</p>
+<pre><code>删除目标数据
+</code></pre>
+<p>expire name succes</p>
+<pre><code>为一个数据设置过期时间,时间单位默认为秒,需输入数字
+</code></pre>
+<p>ttl name</p>
+<pre><code>查看该对象还有多久过期
+</code></pre>
+<p>dbsize</p>
+<pre><code>查看当前正在使用的库中的数据的数量
+</code></pre>
+<p>Flushdb</p>
+<pre><code>清空当前的库
+</code></pre>
+<p>Flushall</p>
+<pre><code>清空所有的库
+</code></pre>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>111 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-05-24 08:00 &#43;0800</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h"></span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="https://tianwenyan.github.io/hugo-page/posts/2019/06/bs4%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">bs4安装与使用</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://tianwenyan.github.io/hugo-page/posts/2019/05/git%E6%98%AF%E4%BB%80%E4%B9%88/">
+                                <span class="button__text">git是什么</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://tianwenyan.github.io/hugo-page/">小田</a></span>
+            
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span> <a href="https://tianwenyan.github.io/hugo-page/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://tianwenyan.github.io/hugo-page/bundle.min.4a69500057d68129e88f497d354afe68422eb56de6d15e45dbe2190858ea5a76bfcb096406f992984b241db45f47388ac57ab0376e3b32125bef7a8a6d0f06c4.js" integrity="sha512-SmlQAFfWgSnoj0l9NUr&#43;aEIutW3m0V5F2&#43;IZCFjqWna/ywlkBvmSmEskHbRfRziKxXqwN247MhJb73qKbQ8GxA=="></script>
+
+
+
+    </body>
+</html>

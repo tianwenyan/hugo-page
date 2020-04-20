@@ -17,20 +17,6 @@
   </url>
   
   <url>
-    <loc>https://tianwenyan.github.io/hugo-page/fr/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tianwenyan.github.io/hugo-page/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://tianwenyan.github.io/hugo-page/fr/"
-                />
-  </url>
-  
-  <url>
     <loc>https://tianwenyan.github.io/hugo-page/fr/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -41,6 +27,20 @@
                 rel="alternate"
                 hreflang="fr"
                 href="https://tianwenyan.github.io/hugo-page/fr/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://tianwenyan.github.io/hugo-page/fr/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tianwenyan.github.io/hugo-page/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://tianwenyan.github.io/hugo-page/fr/"
                 />
   </url>
   

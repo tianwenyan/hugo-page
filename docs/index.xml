@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hello Friend NG</title>
+    <title>😀欢迎来到小田的博客</title>
     <link>https://tianwenyan.github.io/hugo-page/</link>
-    <description>Recent content on Hello Friend NG</description>
+    <description>Recent content on 😀欢迎来到小田的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 20 Apr 2020 19:08:44 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://tianwenyan.github.io/hugo-page/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,6 +18,133 @@
       
       <guid>https://tianwenyan.github.io/hugo-page/posts/2020/04/my-first-post/</guid>
       <description>Hello Word!!</description>
+    </item>
+    
+    <item>
+      <title>简历</title>
+      <link>https://tianwenyan.github.io/hugo-page/about/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://tianwenyan.github.io/hugo-page/about/</guid>
+      <description>田文艳 1998年3月
+求职意向：python全栈开发工程师
+两年工作经验
+电话:187-1024-1267
+邮箱:wenyangt2@gmail.com
+现住址：北京
+ 个人简介 两年 Python 全栈开发经验，掌握 Django 框架，作为主力工程师参与设计与开发过多个项目，负责系统核心模块的开发，测试与自动化部署，有高并发 WEB 应用架构经验。掌握爬虫技术，熟练使用Scrapy，熟悉前端业务规范，掌握vue.js开发，熟悉响应式开发框架Bootstrap,熟悉 HTTP 协议、掌握websocket，掌握 MySQL,redis 数据库与 Linux 系统的常见机制与原理。有优秀的学习能力和团队沟通能力，经常与团队进行技术分享，能与团队共同成长。
+ 教育经历 2012.08 - 2016.06 北京电子科技大学通信工程学院 统招一本
+ 专业技能 后端框架：Django,Flask
+前端框架：Node.js，Vue.js
+数据库：Mysql，Mongodb ，Redis
+工具：Docker，Postman，VSCode
+其他：Fastdfs ， Websocket， Quill-Edior
+ 自我评价： 我性格外向，活泼开朗，随和乐观，积极向上，爱好广泛，喜欢钻研
+适应能力强，能够快速适应工作环境，有很好的自学能力
+沟通能力强，为人感情细腻，有良好的人际交往，组织和团队协作能力</description>
+    </item>
+    
+    <item>
+      <title>爬虫概念</title>
+      <link>https://tianwenyan.github.io/hugo-page/posts/2019/07/%E7%88%AC%E8%99%AB%E6%A6%82%E5%BF%B5/</link>
+      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://tianwenyan.github.io/hugo-page/posts/2019/07/%E7%88%AC%E8%99%AB%E6%A6%82%E5%BF%B5/</guid>
+      <description>初次接触爬虫: 爬虫概念:
+1.通过编写程序模拟浏览器上网,然后让其去互联网上爬取/抓取数据的过程
+2.浏览器是一种原始的爬虫工具
+关于网络爬虫分类:
+1.通用爬虫
+固定的获取一整张页面的数据,如title和url这样的通用数据,但是通常情况下,roots.txt都会对通用爬虫进行限制通用爬虫获取到的数据并不精确常用于浏览器的搜索引擎 2.聚焦爬虫
+&amp;lt;1&amp;gt;聚焦爬虫只获取特定页面的特定数据,其他数据弃之不用,与通用爬虫相反,聚焦爬虫获取的并不一定是通用的属性,更多的是某些页面特有的一些数据,如 小说网站的小说内容,就需要将无用的内容剔除,并进行排版之后存储到对应的txt文件中,这也是一些盗版网站提供的小说下载的方式&amp;lt;2&amp;gt;建立在通用爬虫之上 3.增量式爬虫
+用来监视网站数据更新的情况,以便获得网页中最新更新的数据 爬虫的风险
+ 1.爬虫干扰了被访问网站的正常运营;
+2.爬虫抓取了受法律保护的特定类型的数据或信息
+规避风险的方法
+ 1.严格遵守网站设置的robots协议
+2.在规避反爬虫措施时,需要优化自己的代码,避免干扰被访问网站的正常运行
+3.在使用或传播抓取到的信息时,应审查所抓取的内容,如发现属于用户的个人信息、隐私或者涉及他人商业机密的,应即时停止并删除
+网络协议
+ 1.OSI七层模型&amp;lt;1&amp;gt;.应用层&amp;lt;1.1&amp;gt;应用层协议&amp;lt;1.1.1&amp;gt;.HTTP&amp;lt;1.1.1.1&amp;gt;超文本传输协议&amp;lt;1.1.1.2&amp;gt;Hyper Text Transfer Protocol&amp;lt;1.2&amp;gt;HTTPS&amp;lt;1.1.1&amp;gt;Hyper Text Transfer Protocol over Secure Socket Layer&amp;lt;1.1.2&amp;gt;在Http的及穿上添加了SSL安全套接层,简称HTTPS&amp;lt;1.1.3&amp;gt;HTTP与HTTPS协议区别&amp;lt;1.1.4&amp;gt;Https协议需要到ca申请证书,收费&amp;lt;1.1.4.1&amp;gt;http是超文本传输协议,是明文传输,https是具有安全性的ssl加密传输协议&amp;lt;1.1.4.2&amp;gt;http和https使用的是完全不同的连接方式,用的端口也不一样,前者80,后者443&amp;lt;1.1.4.3&amp;gt;htto链接时无状态的,https协议是由SLL+HTTP协议共同构建的加密传输协议,比http协议安全&amp;lt;1.3&amp;gt;FTP2.表示层3.会话层4.传输层&amp;lt;4.1&amp;gt;传输层协议&amp;lt;4.1.1&amp;gt;TCP:是一种面向连接的可靠的,基于字节流的传输层通信协议a.有序性:数据包标号,判断数据包的正确次序b.正确性:使用checksum函数检查数据包是否虽坏,发送接收时都会计算校验c.可靠性:发送端有超时重发,并由确认机制识别错误和数据的丢失d.可控性:滑动窗口协议与拥塞控制算法控制数据包的发送速度&amp;lt;4.2&amp;gt;UDP:用户数据报协议,面向无连接的传输层协议,传输不可靠a.无连接:数据可能丢失或损坏b.报文小:传输速度快c.吞吐量大的网络传输,可以在一定程度上承受数据丢失5.网络层1.</description>
+    </item>
+    
+    <item>
+      <title>bs4安装与使用</title>
+      <link>https://tianwenyan.github.io/hugo-page/posts/2019/06/bs4%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://tianwenyan.github.io/hugo-page/posts/2019/06/bs4%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</guid>
+      <description>bs4安装配置: pip install bs4# 在终端中下载bs4解析库pip install lxml# 在终端中下载lxml库创建解析对象
+from bs4 import BeautifulSoupf = open(&#39;../day01/baidu.html&#39;,&#39;r&#39;,encoding=&#39;utf8&#39;)soup = BeautifulSoup(f,features=&#39;lxml&#39;)print(soup.div)要注意的是,soup.TagName返回的是第一个对应的标签的内容,
+from bs4 import BeautifulSoupf = open(&#39;../day01/baidu.html&#39;,&#39;r&#39;,encoding=&#39;utf8&#39;)soup = BeautifulSoup(f,features=&#39;lxml&#39;)print(soup.find(&#39;div&#39;))soup.find(‘TagName’)所返回的,同样是第一个元素,其效果和soup.TagName基本相同
+from bs4 import BeautifulSoupf = open(&#39;../day01/baidu.html&#39;,&#39;r&#39;,encoding=&#39;utf8&#39;)soup = BeautifulSoup(f,features=&#39;lxml&#39;)print(soup.find(&#39;div&#39;,class_ = &#39;op-short-video-pc-poster c-span6&#39;))find方法的属性:class_ 设定的是目标的class名,只有符合条件的TagName才能被查询出来
+from bs4 import BeautifulSoupf = open(&#39;../day01/baidu.html&#39;,&#39;r&#39;,encoding=&#39;utf8&#39;)soup = BeautifulSoup(f,features=&#39;lxml&#39;)print(soup.find_all(&#39;div&#39;,class_ = &#39;op-short-video-pc-poster c-span6&#39;))find_all的用法和find基本相同,但是返回的数据格式是一个列表,并且返回的是所有符合条件的数据,而不是第一个
+from bs4 import BeautifulSoupf = open(&#39;.</description>
+    </item>
+    
+    <item>
+      <title>redis概览</title>
+      <link>https://tianwenyan.github.io/hugo-page/posts/2019/05/redis%E6%A6%82%E8%A7%88/</link>
+      <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://tianwenyan.github.io/hugo-page/posts/2019/05/redis%E6%A6%82%E8%A7%88/</guid>
+      <description>redis数据库安装与使用: 前往github下载要使用的版本的压缩包解压缩文件cd到安装目录运行redis-server将安装目录添加到系统环境变量中运行redis-server再次打开一个cmd窗口,输入redis-cli即可进入redis环境keys * 查看当前所有数据端口: 127.0.0.1:6379redis数据类型: list
+llen获取列表长度 lpush
+在表头添加数据 rpush
+在表尾添加数据 lpop
+从表头弹出数据 rpop
+从表尾弹出数据 rpoplpush
+从表尾弹出数据并添加到表头 lrange listName num num
+从xx到xx的所有数据,支持负数 lindex listName num
+指定下标获取对应的值 linsert key (before) value newvalue
+在某个值之前添加另一个新的数值 linsert key (after) value newvalue
+在某个值之后添加另一个新的值 lrem key n value
+删除某个值,n为次数当n &amp;gt; 0,则删除n个对应的值,且删除顺序从左往右当n &amp;lt; 0,删除n个对应的值,且删除顺序从右往左当n = 0,则删除所有符合条件的数据 string</description>
+    </item>
+    
+    <item>
+      <title>git是什么</title>
+      <link>https://tianwenyan.github.io/hugo-page/posts/2019/05/git%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://tianwenyan.github.io/hugo-page/posts/2019/05/git%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <description>caption=&amp;quot;Hello Friend!&amp;rdquo; captionPosition=&amp;quot;right&amp;rdquo; captionStyle=&amp;quot;color: red;&amp;rdquo; &amp;gt;}} Git是当前世界上最先进的分布式版本控制系统。
+常用命令
+git clone git clone代码库的url
+将线上库克隆到本地
+git添加将工作区的修改提交到暂存区
+git提交将暂存区的文件或目录提交到版本库区
+git推将提交到本地库中的内容推送到远程库中
+让git记住密码的命令：
+git config --golobal credential.helper store 清掉配置：
+git config --system --unset ctedential.helper 没有add的时候像回退：
+git checkout . 当你已经添加了，后悔了重置命令：
+git reset HEAD git checkout . 查看提交日志：
+git log git commit之后后悔了：
+git reset --hard git日志号 </description>
+    </item>
+    
+    <item>
+      <title>接收第三方微博登陆</title>
+      <link>https://tianwenyan.github.io/hugo-page/posts/2019/05/%E6%8E%A5%E6%94%B6%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BE%AE%E5%8D%9A%E7%99%BB%E9%99%86/</link>
+      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://tianwenyan.github.io/hugo-page/posts/2019/05/%E6%8E%A5%E6%94%B6%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BE%AE%E5%8D%9A%E7%99%BB%E9%99%86/</guid>
+      <description>申请成为新浪微博开发者流程
+新建应用
+获取appid和app秘钥
+具体流程
+新浪微博拼接登录代码
+#新浪微博登录地址组合返回（第一步）class SinaFirstHandler(BaseHandler):def get(self,*args,**kwargs):#微博接口地址weibo_auth_url = &amp;quot;https://api.weibo.com/oauth2/authorize&amp;quot;#回调网址redirect_url = &amp;quot;http://127.0.0.1:8000/md_admin/weibo&amp;quot;#应用idclient_id = &amp;quot;2636039333&amp;quot;#组合urlauth_url = weibo_auth_url + &amp;quot;?client_id={client_id}&amp;amp;redirect_uri={re_url}&amp;quot;.format(client_id=client_id,re_url=redirect_url)self.write(auth_url)</description>
+    </item>
+    
+    <item>
+      <title>加入购物车逻辑</title>
+      <link>https://tianwenyan.github.io/hugo-page/posts/2019/04/%E5%8A%A0%E5%85%A5%E8%B4%AD%E7%89%A9%E8%BD%A6%E9%80%BB%E8%BE%91/</link>
+      <pubDate>Sat, 20 Apr 2019 19:08:44 +0800</pubDate>
+      
+      <guid>https://tianwenyan.github.io/hugo-page/posts/2019/04/%E5%8A%A0%E5%85%A5%E8%B4%AD%E7%89%A9%E8%BD%A6%E9%80%BB%E8%BE%91/</guid>
+      <description>//加入购物车逻辑add_cart:function(){var find = 0;//遍历购物车for(let i=0,l=this.cartlist.length;i&amp;lt;l;i++){//如果找到了if(this.id == this.cartlist[i][&#39;id&#39;]){//将该商品的数量+1this.cartlist[i][&#39;num&#39;]++;find = 1;break;}}//如果没有找到if(find==0){//将该商品放入购物车列表this.cartlist.push({name:this.name,id:this.id,price:this.price,num:1});}console.log(this.cartlist);//存储到localstoragelocalStorage.setItem(&#39;cart&#39;,JSON.stringify(this.cartlist));},</description>
     </item>
     
   </channel>

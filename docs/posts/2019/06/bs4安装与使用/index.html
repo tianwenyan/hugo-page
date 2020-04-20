@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="小田 ">
+<meta name="description" content="bs4安装配置: pip install bs4# 在终端中下载bs4解析库pip install lxml# 在终端中下载lxml库创建解析对象
+from bs4 import BeautifulSoupf = open(&#39;../day01/baidu.html&#39;,&#39;r&#39;,encoding=&#39;utf8&#39;)soup = BeautifulSoup(f,features=&#39;lxml&#39;)print(soup.div)要注意的是,soup.TagName返回的是第一个对应的标签的内容,
+from bs4 import BeautifulSoupf = open(&#39;../day01/baidu.html&#39;,&#39;r&#39;,encoding=&#39;utf8&#39;)soup = BeautifulSoup(f,features=&#39;lxml&#39;)print(soup.find(&#39;div&#39;))soup.find(‘TagName’)所返回的,同样是第一个元素,其效果和soup.TagName基本相同
+from bs4 import BeautifulSoupf = open(&#39;../day01/baidu.html&#39;,&#39;r&#39;,encoding=&#39;utf8&#39;)soup = BeautifulSoup(f,features=&#39;lxml&#39;)print(soup.find(&#39;div&#39;,class_ = &#39;op-short-video-pc-poster c-span6&#39;))find方法的属性:class_ 设定的是目标的class名,只有符合条件的TagName才能被查询出来
+from bs4 import BeautifulSoupf = open(&#39;../day01/baidu.html&#39;,&#39;r&#39;,encoding=&#39;utf8&#39;)soup = BeautifulSoup(f,features=&#39;lxml&#39;)print(soup.find_all(&#39;div&#39;,class_ = &#39;op-short-video-pc-poster c-span6&#39;))find_all的用法和find基本相同,但是返回的数据格式是一个列表,并且返回的是所有符合条件的数据,而不是第一个
+from bs4 import BeautifulSoupf = open(&#39;." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://tianwenyan.github.io/hugo-page/posts/2019/06/bs4%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" />
+
+
+    <title>
+        
+            bs4安装与使用 :: 😀欢迎来到小田的博客  — Hello Friend NG Theme
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://tianwenyan.github.io/hugo-page/main.min.7bfbbe12786fa0ded4b4c0d792cbb36a5bd0bdb0b856dde57aa7b1f6fe0f2b87.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://tianwenyan.github.io/hugo-page/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://tianwenyan.github.io/hugo-page/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://tianwenyan.github.io/hugo-page/favicon-16x16.png">
+    <link rel="manifest" href="https://tianwenyan.github.io/hugo-page/site.webmanifest">
+    <link rel="mask-icon" href="https://tianwenyan.github.io/hugo-page/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://tianwenyan.github.io/hugo-page/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="bs4安装与使用">
+<meta itemprop="description" content="bs4安装配置: pip install bs4# 在终端中下载bs4解析库pip install lxml# 在终端中下载lxml库创建解析对象
+from bs4 import BeautifulSoupf = open(&#39;../day01/baidu.html&#39;,&#39;r&#39;,encoding=&#39;utf8&#39;)soup = BeautifulSoup(f,features=&#39;lxml&#39;)print(soup.div)要注意的是,soup.TagName返回的是第一个对应的标签的内容,
+from bs4 import BeautifulSoupf = open(&#39;../day01/baidu.html&#39;,&#39;r&#39;,encoding=&#39;utf8&#39;)soup = BeautifulSoup(f,features=&#39;lxml&#39;)print(soup.find(&#39;div&#39;))soup.find(‘TagName’)所返回的,同样是第一个元素,其效果和soup.TagName基本相同
+from bs4 import BeautifulSoupf = open(&#39;../day01/baidu.html&#39;,&#39;r&#39;,encoding=&#39;utf8&#39;)soup = BeautifulSoup(f,features=&#39;lxml&#39;)print(soup.find(&#39;div&#39;,class_ = &#39;op-short-video-pc-poster c-span6&#39;))find方法的属性:class_ 设定的是目标的class名,只有符合条件的TagName才能被查询出来
+from bs4 import BeautifulSoupf = open(&#39;../day01/baidu.html&#39;,&#39;r&#39;,encoding=&#39;utf8&#39;)soup = BeautifulSoup(f,features=&#39;lxml&#39;)print(soup.find_all(&#39;div&#39;,class_ = &#39;op-short-video-pc-poster c-span6&#39;))find_all的用法和find基本相同,但是返回的数据格式是一个列表,并且返回的是所有符合条件的数据,而不是第一个
+from bs4 import BeautifulSoupf = open(&#39;.">
+<meta itemprop="datePublished" content="2019-06-27T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-06-27T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="162">
+<meta itemprop="image" content="https://tianwenyan.github.io/hugo-page/"/>
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://tianwenyan.github.io/hugo-page/"/>
+
+<meta name="twitter:title" content="bs4安装与使用"/>
+<meta name="twitter:description" content="bs4安装配置: pip install bs4# 在终端中下载bs4解析库pip install lxml# 在终端中下载lxml库创建解析对象
+from bs4 import BeautifulSoupf = open(&#39;../day01/baidu.html&#39;,&#39;r&#39;,encoding=&#39;utf8&#39;)soup = BeautifulSoup(f,features=&#39;lxml&#39;)print(soup.div)要注意的是,soup.TagName返回的是第一个对应的标签的内容,
+from bs4 import BeautifulSoupf = open(&#39;../day01/baidu.html&#39;,&#39;r&#39;,encoding=&#39;utf8&#39;)soup = BeautifulSoup(f,features=&#39;lxml&#39;)print(soup.find(&#39;div&#39;))soup.find(‘TagName’)所返回的,同样是第一个元素,其效果和soup.TagName基本相同
+from bs4 import BeautifulSoupf = open(&#39;../day01/baidu.html&#39;,&#39;r&#39;,encoding=&#39;utf8&#39;)soup = BeautifulSoup(f,features=&#39;lxml&#39;)print(soup.find(&#39;div&#39;,class_ = &#39;op-short-video-pc-poster c-span6&#39;))find方法的属性:class_ 设定的是目标的class名,只有符合条件的TagName才能被查询出来
+from bs4 import BeautifulSoupf = open(&#39;../day01/baidu.html&#39;,&#39;r&#39;,encoding=&#39;utf8&#39;)soup = BeautifulSoup(f,features=&#39;lxml&#39;)print(soup.find_all(&#39;div&#39;,class_ = &#39;op-short-video-pc-poster c-span6&#39;))find_all的用法和find基本相同,但是返回的数据格式是一个列表,并且返回的是所有符合条件的数据,而不是第一个
+from bs4 import BeautifulSoupf = open(&#39;."/>
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2019-06-27 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://tianwenyan.github.io/hugo-page/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://tianwenyan.github.io/hugo-page/about/">About</a></li><li><a href="https://tianwenyan.github.io/hugo-page/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>One minute
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="https://tianwenyan.github.io/hugo-page/posts/2019/06/bs4%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/">bs4安装与使用</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <h2 id="bs4安装配置">bs4安装配置:</h2>
+<pre><code>
+pip install bs4
+# 在终端中下载bs4解析库
+pip install lxml
+# 在终端中下载lxml库
+</code></pre><p>创建解析对象</p>
+<pre><code>from bs4 import BeautifulSoup
+
+f = open('../day01/baidu.html','r',encoding='utf8')
+
+soup = BeautifulSoup(f,features='lxml')
+
+print(soup.div)
+</code></pre><p>要注意的是,soup.TagName返回的是第一个对应的标签的内容,</p>
+<pre><code>from bs4 import BeautifulSoup
+
+f = open('../day01/baidu.html','r',encoding='utf8')
+
+soup = BeautifulSoup(f,features='lxml')
+
+print(soup.find('div'))
+</code></pre><p>soup.find(‘TagName’)所返回的,同样是第一个元素,其效果和soup.TagName基本相同</p>
+<pre><code>from bs4 import BeautifulSoup
+
+f = open('../day01/baidu.html','r',encoding='utf8')
+
+soup = BeautifulSoup(f,features='lxml')
+
+print(soup.find('div',class_ = 'op-short-video-pc-poster c-span6'))
+</code></pre><p>find方法的属性:class_ 设定的是目标的class名,只有符合条件的TagName才能被查询出来</p>
+<pre><code>from bs4 import BeautifulSoup
+
+f = open('../day01/baidu.html','r',encoding='utf8')
+
+soup = BeautifulSoup(f,features='lxml')
+
+print(soup.find_all('div',class_ = 'op-short-video-pc-poster c-span6'))
+</code></pre><p>find_all的用法和find基本相同,但是返回的数据格式是一个列表,并且返回的是所有符合条件的数据,而不是第一个</p>
+<pre><code>from bs4 import BeautifulSoup
+
+f = open('../day01/baidu.html','r',encoding='utf8')
+
+soup = BeautifulSoup(f,features='lxml')
+
+print(soup.select('.opr-recommends-merge-content'))
+</code></pre><p>select方法的用法,参数为选择器,支持标签选择器,层级选择器,id选择器,类选择器</p>
+<pre><code>from bs4 import BeautifulSoup
+
+f = open('../day01/baidu.html','r',encoding='utf8')
+
+soup = BeautifulSoup(f,features='lxml')
+
+print(soup.select('.opr-recommends-merge-content &gt; div &gt; a'))
+</code></pre><p>层级选择器写法,使用 &gt; 来指向下一级元素</p>
+<p>层级选择器如果需要定位子类的子类的话,可以不写 &gt;</p>
+<pre><code>from bs4 import BeautifulSoup
+
+f = open('../day01/baidu.html','r',encoding='utf8')
+
+soup = BeautifulSoup(f,features='lxml')
+
+print(soup.select('.opr-recommends-merge-content a'))
+</code></pre><p>以上为不指向性获取包含的内容</p>
+<pre><code>from bs4 import BeautifulSoup
+
+f = open('../day01/baidu.html','r',encoding='utf8')
+
+soup = BeautifulSoup(f,features='lxml')
+
+print(soup.select('.cr-title,.c-clearfix span')[0].span.string)
+</code></pre><pre><code>-------------------------------------------------------------
+from bs4 import BeautifulSoup
+
+f = open('../day01/baidu.html','r',encoding='utf8')
+
+soup = BeautifulSoup(f,features='lxml')
+
+print(soup.select('.cr-title,.c-clearfix span')[0].span.text)
+</code></pre><p>text与string均可获取标签中的文字内容</p>
+<p>text获取的是标签中所有的文本内容,</p>
+<p>string获取的是标签中的直系文本内容以外的内容无法获取</p>
+<p>“我的奴隶的奴隶,不是我的奴隶”</p>
+<pre><code>from bs4 import BeautifulSoup
+
+f = open('../day01/baidu.html','r',encoding='utf8')
+
+soup = BeautifulSoup(f,features='lxml')
+
+print(soup.select('.cr-title,.c-clearfix span')[0].a['class'])
+print(soup.find('div',class_ = 'op-short-video-pc-poster c-span6').a['class'])
+print(soup.find_all('div',class_ = 'op-short-video-pc-poster c-span6')[0].a['class'])
+</code></pre><p>通过定位获取属性值</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>162 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-06-27 08:00 &#43;0800</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h"></span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="https://tianwenyan.github.io/hugo-page/posts/2019/07/%E7%88%AC%E8%99%AB%E6%A6%82%E5%BF%B5/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">爬虫概念</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://tianwenyan.github.io/hugo-page/posts/2019/05/redis%E6%A6%82%E8%A7%88/">
+                                <span class="button__text">redis概览</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://tianwenyan.github.io/hugo-page/">小田</a></span>
+            
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span> <a href="https://tianwenyan.github.io/hugo-page/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://tianwenyan.github.io/hugo-page/bundle.min.4a69500057d68129e88f497d354afe68422eb56de6d15e45dbe2190858ea5a76bfcb096406f992984b241db45f47388ac57ab0376e3b32125bef7a8a6d0f06c4.js" integrity="sha512-SmlQAFfWgSnoj0l9NUr&#43;aEIutW3m0V5F2&#43;IZCFjqWna/ywlkBvmSmEskHbRfRziKxXqwN247MhJb73qKbQ8GxA=="></script>
+
+
+
+    </body>
+</html>

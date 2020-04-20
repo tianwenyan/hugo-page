@@ -1,5 +1,7 @@
 baseURL = "https://tianwenyan.github.io/hugo-page/"
-title   = "Hello Friend NG"
+#baseURL = "/"
+
+title   = "😀欢迎来到小田的博客"
 
 DefaultContentLanguage = "en"
 
@@ -38,7 +40,7 @@ disableHugoGeneratorInject = false
   posts = "/posts/:year/:month/:title/"
 
 [author]
-  name = "Jane Doe"
+  name = "小田"
 
 [blackfriday]
   hrefTargetBlank = true
@@ -58,7 +60,7 @@ disableHugoGeneratorInject = false
   keywords = ""
   images = [""]
 
-  homeSubtitle = "Hello Friend NG"
+  homeSubtitle = "走正确的路，放无心的手，结有道之朋，断无义之友，饮清净之茶，戒色花之酒，闭是非之口。"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   # gitUrl = ""
