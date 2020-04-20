@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "https://tianwenyan.github.io/hugo-page/"
 title   = "Hello Friend NG"
 
 DefaultContentLanguage = "en"

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://tianwenyan.github.io/hugo-page/</loc>
+    <lastmod>2020-04-20T19:08:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://tianwenyan.github.io/hugo-page/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tianwenyan.github.io/hugo-page/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://tianwenyan.github.io/hugo-page/posts/2020/04/my-first-post/</loc>
+    <lastmod>2020-04-20T19:08:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tianwenyan.github.io/hugo-page/posts/</loc>
+    <lastmod>2020-04-20T19:08:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tianwenyan.github.io/hugo-page/tags/</loc>
+    <lastmod>2020-04-20T19:08:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://tianwenyan.github.io/hugo-page/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tianwenyan.github.io/hugo-page/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://tianwenyan.github.io/hugo-page/tags/untagged/</loc>
+    <lastmod>2020-04-20T19:08:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tianwenyan.github.io/hugo-page/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://tianwenyan.github.io/hugo-page/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tianwenyan.github.io/hugo-page/categories/"
+                />
+  </url>
+  
+</urlset>
