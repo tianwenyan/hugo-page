@@ -17,7 +17,26 @@
       <pubDate>Mon, 20 Apr 2020 19:08:44 +0800</pubDate>
       
       <guid>https://tianwenyan.github.io/hugo-page/posts/2020/04/my-first-post/</guid>
-      <description>Hello Word!!</description>
+      <description>hugo与gitee打造纯静态博客 hugo是基于GO语言的静态网站生成器
+hugo的优点：
+  得益于Go的高性能，性能很快
+  世界上最快的静态网站生成工具，5秒生成6000个页面
+  文档为Markdown格式，语法超级简单，还是高性能web服务；
+  丰富的站点迁移工具，可以将wordpress，Ghost，Jekyll，DokuWiki，Blogger轻松迁移至 Hugo
+  超详细的文档
+  活跃的社区
+  更加自由的内容组织方式
+  丰富的主题末班，可以让你的网站更加炫目
+  多环境的支持：macos,linux,windows
+  步骤一： 去go官网网站下载安装包 https://golang.org/dl/
+go version显示主版本号配置成功
+步骤二： 方法1：进行hugo的在线源码编译，打开命令行，输入下面的命令
+go get -u -v github.com/spf13/hugogo build -o hugo main.gomv hugo $GOPATH/bin方法2：如果你不想在线编译安装，也可以去hugo的官网 https://github.com/gohugoio/hugo/releases 下载稳定版的压缩包，解压之后配置一下环境变量也可以
+装完，在命令行输入
+hugo version打印出版本号即表示hugo安装成功
+步骤三： 在命令行输入命令
+hugo new site app就生成了一个名字为hugo_blog的新站点，可以感受到速度非常快，和vue.js创建新站点的速度比起来简直天差地别
+步骤三： 打开配置文件config.toml，这是hugo的站点的相关配置，可以进行一些个性化的定制，改为下面这样：</description>
     </item>
     
     <item>
